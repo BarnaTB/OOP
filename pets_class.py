@@ -13,5 +13,13 @@ class Dog:
     def check_for_hunger(self):
         for dog in Pets.dogs:
             if dog.is_hungry:
-                return 'My dogs are hungry'
-            return 'My dogs are not hungry'
+                print('My dogs are hungry')
+            else:
+                print('My dogs are not hungry')
+
+dog1 = Dog('Tom', 10)
+dog2 = Dog('Fletcher', 11)
+dog3 = Dog('Larry', 9)
+Pets.dogs = [dog1]
+dog1.eat()
+dog1.check_for_hunger()
